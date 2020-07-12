@@ -108,7 +108,7 @@ static const struct file_operations proc_cpu_capacity_fixup_target_op = {
 
 DEFINE_PER_CPU(unsigned long, thermal_pressure);
 
-void arch_set_thermal_pressure(struct cpumask *cpus,
+void topology_set_thermal_pressure(const struct cpumask *cpus,
 			       unsigned long th_pressure)
 {
 	int cpu;
