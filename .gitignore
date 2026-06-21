@@ -139,3 +139,14 @@ kernel/configs/android-*.cfg
 #Ignoring Android.bp link file
 #
 Android.bp
+
+# generated build files
+
+AnyKernel3/
+out/
+tc/
+*.zip
+
+# KernelSU build changes
+drivers/
+KernelSU/
