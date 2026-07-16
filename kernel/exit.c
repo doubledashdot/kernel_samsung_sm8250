@@ -270,7 +270,7 @@ repeat:
 
 	write_unlock_irq(&tasklist_lock);
 	release_thread(p);
-        call_rcu(&p->rcu, delayed_put_task_struct);
+        call_rcu_flush(&p->rcu, delayed_put_task_struct);
 
 	p = leader;
 	if (unlikely(zap_leader))
