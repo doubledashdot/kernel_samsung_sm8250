@@ -130,7 +130,7 @@ wlan_serialization_dequeue_cmd(struct wlan_serialization_command *cmd,
  *
  * Return: QDF_STATUS
  */
-QDF_STATUS wlan_serialization_generic_timer_cb(void *arg);
+void wlan_serialization_generic_timer_cb(void *arg);
 
 /**
  * wlan_serialization_find_and_start_timer() - to find and start the timer
