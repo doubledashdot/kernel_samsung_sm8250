@@ -538,7 +538,6 @@ error:
 	return status;
 }
 
-__attribute__((no_sanitize("cfi")))
 QDF_STATUS wlan_serialization_generic_timer_cb(void *arg)
 {
 	struct wlan_serialization_timer *timer = arg;
