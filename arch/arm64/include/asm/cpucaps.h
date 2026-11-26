@@ -61,9 +61,7 @@
 #define ARM64_HAS_SB				40
 #define ARM64_WORKAROUND_SPECULATIVE_SSBS	41
 #define ARM64_HAS_CNP				42
-#define ARM64_HAS_AMU_EXTN			43
-
-/* kabi: reserve 44 - 62 for future cpu capabilities */
+/* kabi: reserve 43 - 62 for future cpu capabilities */
 #define ARM64_NCAPS				62
 
 #endif /* __ASM_CPUCAPS_H */
