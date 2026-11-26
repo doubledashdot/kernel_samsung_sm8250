@@ -8,7 +8,7 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 			label = "L3";
-			qcom,clstr-tmr-add = <1000>;
+			qcom,clstr-tmr-add = <500>;
 			qcom,psci-mode-shift = <4>;
 			qcom,psci-mode-mask = <0xfff>;
 
@@ -27,7 +27,7 @@
 				qcom,psci-mode = <0xC24>;
 				qcom,entry-latency-us = <3263>;
 				qcom,exit-latency-us = <6562>;
-				qcom,min-residency-us = <9987>;
+				qcom,min-residency-us = <9850>;
 				qcom,min-child-idx = <1>;
 				qcom,is-reset;
 				qcom,notify-rpm;
@@ -40,8 +40,8 @@
 				qcom,psci-mode-shift = <0>;
 				qcom,psci-mode-mask = <0xf>;
 				qcom,ref-stddev = <500>;
-				qcom,tmr-add = <1000>;
-				qcom,ref-premature-cnt = <1>;
+				qcom,tmr-add = <500>;
+				qcom,ref-premature-cnt = <3>;
 				qcom,disable-ipi-prediction;
 				qcom,cpu = <&CPU0 &CPU1 &CPU2 &CPU3>;
 
@@ -60,7 +60,7 @@
 					qcom,psci-cpu-mode = <0x4>;
 					qcom,entry-latency-us = <360>;
 					qcom,exit-latency-us = <531>;
-					qcom,min-residency-us = <3934>;
+					qcom,min-residency-us = <2500>;
 					qcom,is-reset;
 					qcom,use-broadcast-timer;
 				};
@@ -72,6 +72,8 @@
 				#size-cells = <0>;
 				qcom,psci-mode-shift = <0>;
 				qcom,psci-mode-mask = <0xf>;
+				qcom,ref-stddev = <500>;
+				qcom,tmr-add = <500>;
 				qcom,disable-ipi-prediction;
 				qcom,cpu = <&CPU4 &CPU5 &CPU6 &CPU7>;
 
@@ -81,7 +83,7 @@
 					qcom,psci-cpu-mode = <0x1>;
 					qcom,entry-latency-us = <57>;
 					qcom,exit-latency-us = <43>;
-					qcom,min-residency-us = <83>;
+					qcom,min-residency-us = <100>;
 				};
 
 				qcom,pm-cpu-level@3 {  /* C4 */
@@ -90,7 +92,7 @@
 					qcom,psci-cpu-mode = <0x4>;
 					qcom,entry-latency-us = <702>;
 					qcom,exit-latency-us = <1061>;
-					qcom,min-residency-us = <4488>;
+					qcom,min-residency-us = <3000>;
 					qcom,is-reset;
 					qcom,use-broadcast-timer;
 				};
